@@ -5,8 +5,8 @@ $('#btn-send').click(function() {
       url: "https://formspree.io/uljka@yahoo.com",  
       method: "POST",
       data: {
-             email: "uljka@yahoo.com"
-             message: "hi"
+             email: email.value,
+             message: msg.value
              },
       dataType: "json"
   }).done(function() {
